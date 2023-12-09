@@ -4,7 +4,7 @@ public class Regla4 implements IRegla{
         private static final double porcentaje = 0.1d;
         @Override
         public double calcularDescuento(Venta venta){
-            if (venta.calcularTotal() < 15000) return 0;
+            if (venta.calcularTotal() <= 15000) return 0;
 
             double descuento = 0;
             ArrayList<ProductoDescuento> productos = new ArrayList<>();

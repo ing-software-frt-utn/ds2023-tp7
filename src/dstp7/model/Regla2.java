@@ -17,6 +17,6 @@ public class Regla2 implements IRegla {
         if (total <= 25000)
             return total * porcentajeIntermedio;
 
-        return porcentajeMayor;
+        return total * porcentajeMayor;
     }
 }
